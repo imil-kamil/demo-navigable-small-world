@@ -1,0 +1,47 @@
+body {
+  font-family:"Segoe UI",Arial,sans-serif;
+  background:#f4f6f9;
+  margin:0; padding:0;
+  display:flex;
+}
+#sidebar {
+  width:260px; background:#2c3e50; color:white;
+  display:flex; flex-direction:column; padding:16px;
+  box-shadow:2px 0 8px rgba(0,0,0,0.2);
+}
+#sidebar h3 {
+  margin:0 0 12px; font-size:16px; text-align:center; color:#ecf0f1;
+}
+button {
+  margin:6px 0; padding:10px; border:none; border-radius:6px;
+  font-size:14px; cursor:pointer; transition:transform 0.15s ease;
+}
+button:disabled {
+  background:#bdc3c7; color:#7f8c8d; cursor:not-allowed; opacity:0.7;
+}
+button:not(:disabled):hover { transform:translateY(-1px); }
+#initBtn { background:#9b59b6; color:white; }
+#buildBtn { background:#16a085; color:white; }
+#forwardBtn { background:#27ae60; color:white; }
+#resetAllBtn { background:#c0392b; color:white; margin-top:10px; }
+#resetQueryBtn { background:#e67e22; color:white; margin-top:6px; }
+.slider-group { display:flex; align-items:center; justify-content:space-between; margin:8px 0; }
+.slider-group label { flex:1; font-size:13px; color:#ecf0f1; }
+#efSlider { flex:2; max-width:120px; margin:0 8px; }
+#efValue { flex:0; font-weight:bold; color:#1abc9c; }
+#main { flex:1; display:flex; flex-direction:column; align-items:center; padding:20px; }
+#statusBox {
+  margin-bottom:15px; padding:10px 15px; border-radius:6px;
+  font-weight:bold; min-width:720px; background:#ecf0f1; color:#2c3e50; text-align:center;
+}
+canvas { border:2px solid #444; background:white; box-shadow:0 4px 12px rgba(0,0,0,0.2); }
+#panel {
+  margin-top:16px; width:720px; background:#fff;
+  border:1px solid #ccc; border-radius:6px; padding:10px;
+  font-size:13px; box-shadow:0 2px 6px rgba(0,0,0,0.1);
+  max-height:220px; overflow-y:auto;
+}
+.step { margin-bottom:8px; padding:6px; border-bottom:1px solid #eee; }
+.decision { color:#27ae60; font-weight:bold; }
+.stop { color:#c0392b; font-weight:bold; }
+.reset-group { margin-top:auto; display:flex; flex-direction:column; }
