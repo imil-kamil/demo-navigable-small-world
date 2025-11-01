@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>NSW DEMO</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="sidebar">
+    <h3>Mulai Demonya</h3>
+    <button id="initBtn">Inisialisasi Node</button>
+    <div class="slider-group">
+      <label for="efSlider">efConstruction:</label>
+      <input type="range" id="efSlider" min="2" max="8" value="3" disabled>
+      <span id="efValue">3</span>
+    </div>
+    <button id="buildBtn" disabled>Bangun Jaringan</button>
+    <button id="forwardBtn" disabled>Jelajah Maju</button>
+
+    <div class="reset-group">
+      <button id="resetAllBtn">Reset Semua</button>
+      <button id="resetQueryBtn" disabled>Reset Query/Entry</button>
+    </div>
+  </div>
+
+  <div id="main">
+    <div id="statusBox">Status: Klik "Inisialisasi Node" untuk memulai</div>
+    <canvas id="myCanvas" width="720" height="500"></canvas>
+    <div id="panel"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
